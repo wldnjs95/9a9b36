@@ -1,0 +1,23 @@
+.formlist-container{
+    width:300px;
+    margin-right:40px;
+}
+
+.formlist-haeding {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.formlist-list{
+    list-style:none;
+    padding: 0;
+}
+
+.formlist-item {
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.formlist-item.selected {
+    font-weight:bold;
+}

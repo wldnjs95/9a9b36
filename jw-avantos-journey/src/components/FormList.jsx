@@ -1,3 +1,4 @@
+import './FormList.css'
 function FormList({journey, selectedNode, setSelectedNode}){
     console.log('FormList called')
 

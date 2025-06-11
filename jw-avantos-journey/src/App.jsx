@@ -52,12 +52,13 @@ function App() {
 
   return (
     <div className="journey-container">
-      {/* Journey Form*/}
-      <FormList
-      journey={journey}
-      selectedNode={selectedNode}
-      setSelectedNode={setSelectedNode}/>
-
+      <div className="sidebar">
+        {/* Journey Form*/}
+        <FormList
+        journey={journey}
+        selectedNode={selectedNode}
+        setSelectedNode={setSelectedNode}/>
+      </div>
       {/* selectedNode Form Modal*/}
       
       {selectedNode && (

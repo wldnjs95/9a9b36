@@ -1,5 +1,12 @@
 .journey-container {
     display: flex;
-    flex-direction: column;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.sidebar {
+    width: 220px;
     padding: 20px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #ccc;
 }
