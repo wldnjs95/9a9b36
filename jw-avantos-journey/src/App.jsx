@@ -2,16 +2,12 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import PrefillForm from './components/prefillForm'
 import getAvailableSources from './utils/getSources';
-
+import FormList from './components/FormList';
 function App() {
   const serverURL = 'http://localhost:3000/api/v1/test_tenant_id/actions/blueprints/test_action_blueprint_id/graph';
   const [journey, setJourney] = useState(null);
   const [selectedNode, setSelectedNode] = useState(null);
 
-  const handleNodeClick = (node) => {
-    setSelectedNode(node);
-    console.log('Selected node:', node);
-  }
 
   useEffect(() => {
     console.log('Fetching data')
@@ -57,16 +53,10 @@ function App() {
   return (
     <div className="journey-container">
       {/* Journey Form*/}
-      <h2>Journey Coding</h2>
-      {[...journey.nodes]
-      .sort((a,b)=> a.data.name.localeCompare(b.data.name))
-      .map((node) => {
-        return(
-          <div key={node.id} onClick={()=>handleNodeClick(node)}>
-            <p>{node.data.name}</p>
-          </div>
-        )
-      })}
+      <FormList
+      journey={journey}
+      selectedNode={selectedNode}
+      setSelectedNode={setSelectedNode}/>
 
       {/* selectedNode Form Modal*/}
       
