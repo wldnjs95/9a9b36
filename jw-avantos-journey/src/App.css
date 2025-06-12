@@ -10,3 +10,8 @@
     background-color: #f2f2f2;
     border-right: 1px solid #ccc;
 }
+
+.main-content {
+    flex: 1;
+    padding: 1.5rem;
+}

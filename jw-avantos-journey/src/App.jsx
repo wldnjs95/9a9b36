@@ -61,6 +61,7 @@ function App() {
       </div>
       {/* selectedNode Form Modal*/}
       
+      <div className="main-content">
       {selectedNode && (
         <PrefillForm
         node={selectedNode}
@@ -69,6 +70,7 @@ function App() {
         updateMapping={updateMapping}
         />
       )}
+      </div>
       
     </div>
   )

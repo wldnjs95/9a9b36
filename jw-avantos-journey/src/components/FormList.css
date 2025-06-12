@@ -1,5 +1,4 @@
 .formlist-container{
-    width:300px;
     margin-right:40px;
 }
 
@@ -10,14 +9,21 @@
 
 .formlist-list{
     list-style:none;
-    padding: 0;
+    padding-left: 0;
 }
 
 .formlist-item {
     margin-bottom: 12px;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.formlist-item:hover {
+    background-color: #e0e0e0;
 }
 
 .formlist-item.selected {
     font-weight:bold;
+    background-color: #d0d0ff;
 }
